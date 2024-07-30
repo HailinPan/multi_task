@@ -9,19 +9,19 @@ def read_requirements(path):
 with open("README.md", "r", encoding="UTF-8") as fh:
     long_description = fh.read()
 
-exec(open('multiprocess/version.py').read())
+exec(open('multi_task/version.py').read())
 
 setup(
-    name="multiprocess",
+    name="multi_task",
     version=__version__,
     python_requires=">=3.8",
     install_requires=read_requirements("requirements.txt"),
-    packages=["multiprocess"],
+    packages=["multi_task"],
     author="Hailin Pan",
     author_email="panhailin@genomics.cn",
-    description="multiprocess",
+    description="multi_task",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="BSD 2-Clause License",
-    url="https://github.com/HailinPan/multiprocess.git",
+    url="https://github.com/HailinPan/multi_task.git",
 )
