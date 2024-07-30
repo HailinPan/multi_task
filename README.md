@@ -9,4 +9,4 @@ pip install git+https://github.com/HailinPan/multi_task.git
 
 # Usage
 
-The [Romeo tutorials](https://github.com/BrainStOrmics/Romeo/tree/main/tutorials/romeo_tutorials.ipynb) provides a quick-start guide based on the pbmc3k dataset.
+The [example](https://github.com/HailinPan/multi_task/blob/main/example/example.ipynb) provides a quick-start guide.
