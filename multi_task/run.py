@@ -77,12 +77,18 @@ def _run_cmds(
         p.starmap(os_sys, cmds)
 
 
-
 def run_cmds(
     cmd_file: str,
     task_num: int = 1,
     try_time: int = 10,
 ):
+    """run several cmds parallelly
+
+    Args:
+        cmd_file (str): the file for cmds, one line a cmd
+        task_num (int, optional): the number of work to be running at one time. Defaults to 1.
+        try_time (int, optional): if some cmds did not finish in a try, could try more time to finish the unfinished cmds. Defaults to 10.
+    """
     for i in range(try_time):
         _run_cmds(cmd_file=cmd_file, task_num=task_num)
-        
+    
